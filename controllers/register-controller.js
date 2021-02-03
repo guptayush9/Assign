@@ -4,16 +4,16 @@ module.exports.register=function(req,res){
     var sql = 'INSERT INTO client SET ?';
     //console.log(firstname);
     var client={
-        "cl_id":req.body.cl_id,
-        "cl_firstname":req.body.cl_firstname,
-        "cl_middlename":req.body.cl_middlename,
-        "cl_lastname":req.body.cl_lastname,
-        "cl_emailid":req.body.cl_emailid,
-        "cl_password":req.body.cl_password,
-        "cl_age":req.body.cl_age,
-        "cl_gender":req.body.cl_gender,
-        "cl_aadhaarno":req.body.cl_aadhaarno,
-        "cl_panno":req.body.cl_panno
+        "hs_id":req.body.hs_id,
+        "hs_firstname":req.body.hs_firstname,
+        "hs_middlename":req.body.hs_middlename,
+        "hs_lastname":req.body.hs_lastname,
+        "hs_emailid":req.body.hs_emailid,
+        "hs_password":req.body.hs_password,
+        "hs_age":req.body.hs_age,
+        "hs_gender":req.body.hs_gender,
+        "hs_aadhaarno":req.body.hs_aadhaarno,
+        "hs_panno":req.body.hs_panno
     }
     connection.query(sql,[client],function(err,result){
       if (err) {
